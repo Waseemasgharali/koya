@@ -174,3 +174,29 @@ header {
   color: var(--bg-color);
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.brands {
+  text-align: center;
+  padding: 0px 20px;
+}
+.brands-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brands-content img {
+  width: auto;
+  height: 25px;
+  mix-blend-mode: darken;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.brands-content img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
