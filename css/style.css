@@ -46,7 +46,7 @@ section {
   width: 100%;
 }
 header {
-  position: inherit;
+  position: fixed;
   top: 0px;
   left: 0;
   width: 100%;
@@ -93,8 +93,6 @@ header {
   color: var(--main-color);
 }
 .nav {
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,7 +157,7 @@ header {
 }
 .hero {
   width: 100%;
-  padding-top: 0;
+  margin-top: 4.5rem !important;
 }
 .hero-container {
   position: relative;
@@ -321,6 +319,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  align-items: center;
   gap: 20px;
 }
 .choose-text {
@@ -410,6 +409,7 @@ header {
   color: var(--bg-color);
   padding: 10px 20px;
   font-size: 1.2rem;
+  text-align: center;
 }
 .footer {
   background: var(--text-color);
@@ -462,4 +462,79 @@ header {
   text-align: center;
   color: var(--bg-color);
   background: var(--text-color);
+}
+/* Responsive */
+@media (max-width: 1110px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 720px) {
+  section {
+    padding: 2rem 0;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  .nav {
+    padding: 10px 0;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .logo span {
+    font-size: 0.84rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 0.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0px 20px 20px rgb(15 54 55 / 20%);
+    clip-path: circle(0% at 100% 0%);
+    transition: 0.6s;
+    z-index: 100;
+  }
+  .navbar a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .open-menu {
+    clip-path: circle(144% at 100% 0%);
+  }
+  .hero {
+    margin-top: 3rem !important;
+  }
+  .hero-container {
+    min-height: 400px;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 630px) {
+  .choose-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 490px) {
+  .head-contact {
+    display: none;
+  }
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
