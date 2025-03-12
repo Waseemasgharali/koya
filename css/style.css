@@ -5,7 +5,7 @@
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  scroll-padding-top: 3rem;
+  scroll-padding-top: 2rem;
   font-family: var(--poppins-font);
 }
 /* Variables */
@@ -316,10 +316,46 @@ header {
 .service-item p {
   text-align: center;
 }
+/* Choose Section */
+.choose-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.choose-text {
+  max-width: 450px;
+}
+.choose-text h2 {
+  font-size: 1.7rem;
+}
+.choose-text p {
+  font-size: 0.94rem;
+  margin-bottom: 20px;
+}
+.choose-text .choose-item {
+  font-size: 16px;
+  background: var(--text-alter-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-text .choose-item:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+}
+.choose-img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
 .brands {
   text-align: center;
   padding: 0px 20px;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 .brands-content {
   display: flex;
@@ -360,7 +396,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 .warehouse-content {
