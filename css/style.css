@@ -235,7 +235,7 @@ header {
 }
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem !important;
 }
 .heading p {
   font-size: 0.938rem;
@@ -291,6 +291,30 @@ header {
 .get-quote:hover {
   background: var(--second-color);
   transition: all 0.3s ease-in-out;
+}
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: var(--text-alter-color);
+  border-radius: 0.5rem;
+  height: 100%;
+}
+.service-item span {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.service-item p {
+  text-align: center;
 }
 .brands {
   text-align: center;
