@@ -10,12 +10,12 @@
 }
 /* Variables */
 :root {
-  --main-color: #3c6da7;
+  --main-color: #f94d64;
   --second-color: #3f7eb4;
   --text-color: #060413;
   --container-color: #f8e4be;
-  --bg-color: #f9f6f2;
-  --text-alter-color: #94908e;
+  --bg-color: #fff;
+  --text-alter-color: #f6f6f6;
   --poppins-font: "Poppins", sans-serif;
   --font-family-2: "Fugaz One", sans-serif;
 }
@@ -52,13 +52,54 @@ header {
   width: 100%;
   z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--bg-color);
+}
+.top-head {
+  background: var(--text-alter-color);
+}
+.top-h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.head-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--main-color);
+}
+.head-location img {
+  width: 30px;
+}
+.head-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.head-c-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.head-c-box i {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+.head-c-box p,
+.head-c-box a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--main-color);
 }
 .nav {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--bg-color);
-  padding: 17px 20px;
+  padding: 17px 0px;
 }
 .logo {
   font-size: 1.47rem;
@@ -158,14 +199,14 @@ header {
   max-width: 444px;
 }
 .hero-text .btn {
-  padding: 0.8rem 1.5rem;
+  padding: 10px 24px;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 1px;
-  color: var(--main-color);
-  background: var(--bg-color);
+  color: var(--bg-color);
+  background: var(--main-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 5rem;
   cursor: pointer;
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -174,10 +215,82 @@ header {
   color: var(--bg-color);
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.about {
+  padding-top: 1rem;
+}
+.about-text {
+  text-align: center;
+}
+.about-text h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+.about-text p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
 .heading {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading p {
+  font-size: 0.938rem;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.product-box {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: var(--text-alter-color);
+  border-radius: 0.5rem;
+}
+.product-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+.product-box h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.product-box p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.get-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: var(--main-color);
+  padding: 8px 20px;
+  border-radius: 7px;
+  color: var(--bg-color);
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+.get-quote i {
+  font-size: 1.1rem;
+}
+.get-quote:hover {
+  background: var(--second-color);
+  transition: all 0.3s ease-in-out;
 }
 .brands {
   text-align: center;
