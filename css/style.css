@@ -198,7 +198,7 @@ header {
   margin-bottom: 1.5rem;
   max-width: 444px;
 }
-.hero-text .btn {
+.btn {
   padding: 10px 24px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -210,7 +210,7 @@ header {
   cursor: pointer;
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.hero-text .btn:hover {
+.btn:hover {
   background: var(--text-color);
   color: var(--bg-color);
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -319,6 +319,7 @@ header {
 .brands {
   text-align: center;
   padding: 0px 20px;
+  margin-bottom: 1.5rem;
 }
 .brands-content {
   display: flex;
@@ -336,4 +337,93 @@ header {
 .brands-content img:hover {
   filter: grayscale(0);
   transform: scale(1.05);
+}
+.warehouse {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.warehouse-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.w-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.warehouse-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+.warehouse-content p {
+  background: #ff822d;
+  color: var(--bg-color);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+.footer {
+  background: var(--text-color);
+  color: #f6f6f6;
+  border-top: 2px solid var(--main-color);
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.footer-container .logo {
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+}
+.footer-container .logo:hover {
+  color: var(--bg-color);
+}
+.footer-container .footer-box {
+  display: flex;
+  flex-direction: column;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social a {
+  font-size: 24px;
+  color: var(--bg-color);
+  margin-right: 1rem;
+}
+.social a:hover {
+  color: var(--main-color);
+}
+.footer-box h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.footer-box a,
+.footer-box p {
+  color: #818181;
+  margin-bottom: 10px;
+}
+.footer-box a:hover {
+  color: var(--main-color);
+}
+.copyright {
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background: var(--text-color);
 }
