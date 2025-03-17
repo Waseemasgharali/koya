@@ -243,8 +243,7 @@ header {
 }
 
 .products-container {
-  background: var(--text-color);
-  color: var(--bg-color);
+  background: var(--text-alter-color);
   position: relative;
   padding: 4rem 0;
 }
@@ -267,7 +266,7 @@ header {
 .menu-box h2 {
   font-size: 2.4rem;
   font-weight: 500;
-  color: var(--yellow-color);
+  color: var(--main-color);
   font-family: var(--font-family-2);
   margin-bottom: 1.8rem;
 }
@@ -275,7 +274,7 @@ header {
   display: grid;
   grid-template-columns: 82px 1fr;
   align-items: center;
-  border-top: 1px dashed #ffffff7c;
+  border-top: 1px dashed #161616;
   gap: 10px;
   cursor: pointer;
   padding: 10px;
@@ -287,7 +286,7 @@ header {
 }
 .pro-content:last-child,
 .ser-content:last-child {
-  border-bottom: 1px dashed #ffffff7c;
+  border-bottom: 1px dashed #161616;
 }
 .m-item-box img {
   max-width: 80px;
@@ -310,7 +309,7 @@ header {
 }
 .m-item-des p {
   font-size: 0.94rem;
-  color: rgb(255 255 255 / 70%);
+  color: rgba(46, 46, 46, 0.8);
   margin-top: 4px;
 }
 .m-item-price {
