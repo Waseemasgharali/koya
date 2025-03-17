@@ -330,8 +330,8 @@ header {
 }
 .brands {
   text-align: center;
-  padding: 0px 20px;
-  margin: 1.5rem 0;
+  padding: 30px 20px;
+  background: hsl(212deg 100% 96.16%);
 }
 .brands-content {
   display: flex;
