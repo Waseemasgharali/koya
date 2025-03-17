@@ -67,11 +67,16 @@ header {
 .head-location {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   color: var(--main-color);
 }
-.head-location img {
-  width: 30px;
+.head-c-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.head-c-box i {
+  font-size: 18px;
 }
 .head-contact {
   display: flex;
@@ -195,7 +200,7 @@ header {
   color: var(--bg-color);
   background: var(--main-color);
   border: none;
-  border-radius: 5rem;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
