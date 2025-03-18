@@ -1,6 +1,5 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Righteous&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,8 +16,7 @@
   --container-color: #f8e4be;
   --bg-color: #fff;
   --text-alter-color: #f6f6f6;
-  --font-family-1: "Mitr", sans-serif;
-  --font-family-2: "Righteous", sans-serif;
+  --font-family-1: "Roboto", sans-serif;
 }
 body {
   color: var(--text-color);
@@ -180,7 +178,6 @@ header {
   color: var(--bg-color);
 }
 .hero-text h1 {
-  font-family: var(--font-family-2);
   max-width: 444px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -227,6 +224,7 @@ header {
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
+  text-align: justify;
   margin-bottom: 10px;
 }
 .heading {
@@ -236,7 +234,6 @@ header {
 .heading h2 {
   font-size: 2.4rem;
   font-weight: 500;
-  font-family: var(--font-family-2);
 }
 .heading p {
   font-size: 0.938rem;
@@ -267,7 +264,6 @@ header {
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--main-color);
-  font-family: var(--font-family-2);
   margin-bottom: 1.8rem;
 }
 .m-item-box {
@@ -387,7 +383,7 @@ header {
 }
 .choose-text p {
   font-size: 0.94rem;
-  margin-bottom: 20px;
+  margin: 1rem 0;
 }
 .choose-text .choose-item {
   font-size: 16px;
@@ -597,6 +593,9 @@ header {
   }
 }
 @media (max-width: 650px) {
+  .head-contact {
+    display: none;
+  }
   .products-content {
     grid-template-columns: 1fr;
   }
@@ -617,9 +616,6 @@ header {
   }
 }
 @media (max-width: 490px) {
-  .head-contact {
-    display: none;
-  }
   .hero-text h1 {
     font-size: 1.7rem;
   }
