@@ -351,6 +351,7 @@ header {
 }
 .koya-spec-box h3 {
   text-align: left;
+  margin-bottom: 10px;
 }
 .koya-spec-box ul {
   list-style: disc;
