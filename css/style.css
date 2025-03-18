@@ -277,8 +277,12 @@ header {
   height: 100%;
 }
 .m-item-box:hover {
+  color: var(--bg-color);
   background: var(--main-color);
   transition: background 0.3s ease-in-out;
+}
+.m-item-box:hover .m-item-des p {
+  color: var(--bg-color);
 }
 .pro-content:last-child,
 .ser-content:last-child {
