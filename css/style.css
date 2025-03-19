@@ -570,10 +570,10 @@ header {
     display: flex;
   }
   .nav {
-    padding: 10px 0;
+    padding: 12px 0;
   }
   .logo img {
-    width: 70px;
+    width: 75px;
   }
   .navbar {
     position: absolute;
